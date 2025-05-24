@@ -45,7 +45,7 @@ const displayAllCategory = (allPets) => {
         const div = document.createElement('div');
         div.classList = "bg-gray-100 p-4 rounded w-full";
         div.innerHTML = `
-            <img class ="rounded-lg w-full h-[200px]" src = "${HomePet.image}" class = ""/>
+            <img class ="rounded-lg w-full md:h-[200px] lg:h-[300px]" src = "${HomePet.image}" class = ""/>
             <h4 class = "text-lg font-bold mt-4">${HomePet.category}</h4>
             <div class ="py-4 text-gray-700">
                 <p><i class="fa-brands fa-slack"></i> Breed: ${HomePet.breed}</p>
@@ -55,8 +55,8 @@ const displayAllCategory = (allPets) => {
             </div>
             <div class = "flex justify-between">
                 <button class ="btn px-4"><i class="fa-regular fa-thumbs-up"></i></button>
-                <button class ="btn px-4">Adopt</button>
-                <button class ="btn px-4">Details</button>
+                <button class ="btn px-4 text-green-800">Adopt</button>
+                <button class ="btn px-4 text-green-800">Details</button>
             </div>
         
         `;
