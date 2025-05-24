@@ -45,14 +45,19 @@ const displayAllCategory = (allPets) => {
         const div = document.createElement('div');
         div.classList = "bg-gray-100 p-4 rounded w-full";
         div.innerHTML = `
-            <img class ="rounded-lg w-full" src = "${HomePet.image}" class = ""/>
+            <img class ="rounded-lg w-full h-[200px]" src = "${HomePet.image}" class = ""/>
             <h4 class = "text-lg font-bold mt-4">${HomePet.category}</h4>
-            <div class ="py-4">
+            <div class ="py-4 text-gray-700">
                 <p><i class="fa-brands fa-slack"></i> Breed: ${HomePet.breed}</p>
-                <p><i class="fa-regular fa-calendar-check"></i> Birth: ${HomePet.date_of_birth}</p>
-            <p><i class="fa-solid fa-dollar-sign border-b-indigo-500"></i> Price: ${HomePet.price}</p>
+                <p class = "py-2"><i class="fa-regular fa-calendar-check"></i> Birth: ${HomePet.date_of_birth}</p>
+            <p><i class="fa-solid fa-dollar-sign mb-5"></i> Price: ${HomePet.price}</p>
+            <hr/>
             </div>
-
+            <div class = "flex justify-between">
+                <button class ="btn px-4"><i class="fa-regular fa-thumbs-up"></i></button>
+                <button class ="btn px-4">Adopt</button>
+                <button class ="btn px-4">Details</button>
+            </div>
         
         `;
         cardContainer.appendChild(div);
