@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3adb7007d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="max-w-screen-2xl mx-auto">
+
+    <!-- Header  -->
+    <header>
+        <!-- nav start here -->
+        <nav class="px-4">
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+
+                    <div class="flex gap-4 items-center">
+                        <img src="images/logo.webp" alt="logo">
+                        <a class="text-xl font-bold">Pedy</a>
+                    </div>
+                </div>
+                <div class="navbar-center invisible md:visible lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end invisible md:visible">
+                    <a class="btn rounded-full"><i class="fa-regular fa-user"></i></a>
+                </div>
+                <div class="dropdown md:hidden ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-52 p-2 shadow text-lg font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav start ended -->
+
+        <!-- Hero banner start -->
+        <section class="text-center mt-12">
+            <div class="">
+                <div class="flex justify-center items-center gap-10 text-lg font-semibold mb-4">
+                    <h5 class=" text-gray-600">Bringing Families Together</h5>
+                    <i class="fa-solid fa-fire-flame-curved text-red-600"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Tour Path to Adoption<br>Starts Here</h1>
+                <p class="text-gray-500">It is a long established fact that a reader will be distracted by the readable
+                    content of a page when
+                    looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <button class="btn btn-accent px-5 mt-5 text-white font-bold">View More</button>
+            </div>
+            <div class="px-4 mx-auto">
+                <img class="mx-auto my-8" src="images/pet.webp" alt="Herro pet banner">
+            </div>
+        </section>
+        <!-- Hero banner ended -->
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Adopt  Your  Best Friend start -->
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-3">Adopt Your Best Friend</h2>
+            <p class="text-gray-600">It is a long established fact that a reader will be distracted by the readable
+                content of a<br>page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+        </section>
+        <!-- Adopt  Your  Best Friend ended -->
+        <!-- Card-btn start -->
+         <section class="flex justify-between mb-8 md:px-24 lg:px-48" id="category-btn"></section>
+        <!-- Card-btn ended -->
+    </main>
+
+    <footer class="justify-between footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+        <nav>
+            <div class="flex gap-4 items-center mb-5">
+                <img src="images/logo.webp" alt="logo">
+                <a class="text-xl font-bold">Pedy</a>
+            </div>
+            <p class="link link-hover">Location: av. Washington 165, NY CA 54003</p>
+            <p class="link link-hover">Phone: +31 85 964 47 25</p>
+            <p class="link link-hover">Email: info@yourdomain.com</p>
+            <p class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</p>
+            <div class="flex gap-6 mt-2 text-2xl">
+                <a href="#"><i class="fa-brands fa-facebook text-blue-700"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube text-red-700"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-red-200"></i></a>  
+            </div>
+        </nav>
+        <nav>
+            <h3 class="footer-title mb-5">Useful Links</h3>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Animals</a>
+            <a class="link link-hover">Foundation</a>
+            <a class="link link-hover">Contact</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Drop a Message</h6>
+            <fieldset class="">
+                <div class="flex flex-col gap-4 join ">
+                    <input type="text" placeholder="Inter your emai"
+                        class="bg-slate-900 rounded-lg text-lg py-3 px-4 outline-none border-none" />
+                    <button class="btn btn-accent text-white text-lg font-semibold rounded-lg py-5">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/"></script>
+</body>
+
+</html>
