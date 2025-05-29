@@ -1,4 +1,4 @@
-// loadCategory
+// loadCategory all data 
 
 const loadCategory = () => {
     fetch('https://openapi.programming-hero.com/api/peddy/categories')
@@ -6,7 +6,7 @@ const loadCategory = () => {
         .then(data => displayCategoryBtn(data.categories))
 };
 
-// loadCategory data display
+// loadCategory data display by button 
 
 const displayCategoryBtn = (items) => {
     // console.log(items);
@@ -16,11 +16,12 @@ const displayCategoryBtn = (items) => {
         const div = document.createElement('div');
         div.classList = ""
         div.innerHTML = `
-            <button class ="btn py-6 px-8 rounded-lg">
-            <div class= "flex items-center gap-4">
-                <img class ="h-[30px] w-[30px]" src = ${item.category_icon} />
-                <h2 class = "text-lg font-bold">${item.category}</button></h2>
-            </div>
+            <button id="category-btn-${item.petId}" onclick="clickCategoryButton(${item.petId})" class ="btn py-6 md:px-8 rounded-lg">
+                <div class= "flex items-center gap-2">
+                    <img class ="h-[15px] md:h-[30px] md:w-[30px]" src = ${item.category_icon} />
+                    <h2 class = "md:text-lg font-bold">${item.category}</h2>
+                </div>
+            </button>
             
         `;
         loadBtn.appendChild(div);
@@ -39,8 +40,9 @@ const loadAllCategory = () => {
 // Display all category data load
 const displayAllCategory = (allPets) => {
     const cardContainer = document.getElementById('card-container');
+    const sideImageShow = document.getElementById('side-like-image');
     for (const HomePet of allPets) {
-        console.log(HomePet);
+        // console.log(HomePet);
 
         const div = document.createElement('div');
         div.classList = "bg-gray-100 p-4 rounded w-full";
@@ -54,14 +56,18 @@ const displayAllCategory = (allPets) => {
             <hr/>
             </div>
             <div class = "flex justify-between">
-                <button class ="btn px-4"><i class="fa-regular fa-thumbs-up"></i></button>
+                <button class ="btn px-4" id = "bvc"><i class="fa-regular fa-thumbs-up"></i></button>
                 <button class ="btn px-4 text-green-800">Adopt</button>
                 <button class ="btn px-4 text-green-800">Details</button>
-            </div>
-        
+            </div>  
         `;
         cardContainer.appendChild(div);
-    }
+        // craete function side image show
+        const clickLikeBtn = () => {
+            const ocClick = document.getElementById('bvc');
+            console.log(ocClick);
+        }
+    };
 }
 
 
